@@ -1,0 +1,113 @@
+
+# Start giving a value to a register.
+li $2, 1
+li $3, 2
+li $4, 3
+li $5, 4
+li $6, 5
+li $7, 6
+li $8, 7
+li $9, 8
+li $10, 9
+li $11, 10
+li $12, 11
+li $13, 12
+li $14, 13
+li $15, 14
+li $16, 15
+li $17, 16
+li $18, 17
+li $19, 18
+
+# Test double.
+add $2, $2, $2
+add $2, $2, $2
+
+# Test Increment by another register.
+
+add $4, $4, $3
+add $5, $6, $5
+
+add $4, $2, $4
+
+
+# Add two registers to new register
+
+add $6, $7, $8
+add $9, $10, $11
+add $6, $7, $8
+
+# Repeate above tests in one run to see if any issues arise.
+
+# Test double.
+add $2, $2, $2
+add $2, $2, $2
+
+# Test Increment by another register.
+
+add $4, $4, $3
+add $5, $6, $5
+
+add $4, $2, $4
+
+
+# Add two registers to new register
+
+add $6, $7, $8
+add $9, $10, $11
+add $6, $7, $8
+
+
+# Test double.
+add $2, $2, $2
+add $2, $2, $2
+
+# Test Increment by another register.
+
+add $4, $4, $3
+add $5, $6, $5
+
+add $4, $2, $4
+
+
+# Add two registers to new register
+
+add $6, $7, $8
+add $9, $10, $11
+add $6, $7, $8
+
+# Test double.
+add $2, $2, $2
+add $2, $2, $2
+
+# Test Increment by another register.
+
+add $4, $4, $3
+add $5, $6, $5
+
+add $4, $2, $4
+
+
+# Add two registers to new register
+
+add $6, $7, $8
+add $9, $10, $11
+add $6, $7, $8
+
+# Test double.
+add $2, $2, $2
+add $2, $2, $2
+
+# Test Increment by another register.
+
+add $4, $4, $3
+add $5, $6, $5
+
+add $4, $2, $4
+
+
+# Add two registers to new register
+
+add $6, $7, $8
+add $9, $10, $11
+add $6, $7, $8

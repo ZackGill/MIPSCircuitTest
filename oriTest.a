@@ -1,0 +1,405 @@
+# Start giving a value to a register.
+li $2, 1
+li $3, 2
+li $4, 3
+li $5, 4
+li $6, 5
+li $7, 6
+li $8, 7
+li $9, 8
+li $10, 9
+li $11, 10
+li $12, 11
+li $13, 12
+li $14, 13
+li $15, 14
+li $16, 15
+li $17, 16
+li $18, 17
+li $19, 18
+
+
+
+# Only regular ORI, no Puesdo
+
+# Or and store to itself
+# These should not have any effect
+ori $2, $2, 1
+ori $2, $2, 1
+ori $2, $2, 1
+ori $2, $2, 1
+
+ori $4, $4, 1
+ori $4, $4, 1
+ori $4, $4, 1
+
+ori $6, $6, 25
+ori $6, $6, 27
+
+ori $9, $9, 100
+ori $9, $9, 150
+
+ori $10, $10, 200
+
+
+# Large Ori to self
+
+ori $2, $2, 1000
+ori $2, $2, 1000
+ori $2, $2, 1000
+ori $2, $2, 1000
+
+ori $4, $4, 1000
+ori $4, $4, 1000
+ori $4, $4, 1000
+
+ori $6, $6, 2000
+ori $6, $6, 10000
+
+ori $9, $9, 15000
+ori $9, $9, 20000
+
+ori $10, $10, 32767
+
+# Small ORI from another to self
+
+ori $2, $3, 1
+ori $2, $3, 1
+ori $2, $3, 1
+ori $2, $3, 1
+
+ori $4, $5, 1
+ori $4, $5, 1
+ori $4, $5, 1
+
+ori $6, $7, 25
+ori $6, $8, 27
+
+ori $9, $10, 100
+ori $9, $11, 150
+
+ori $10, $19, 200
+
+# Large ORI form another to self
+
+ori $11, $12, 1000
+ori $11, $12, 1000
+ori $11, $12, 1000
+ori $11, $12, 1000
+
+ori $13, $14, 1000
+ori $13, $14, 1000
+ori $13, $14, 1000
+
+ori $15, $16, 2000
+ori $15, $17, 10000
+
+ori $19, $18, 15000
+ori $19, $9, 20000
+
+ori $14, $7, 32767
+
+# Repeat for safety
+
+# Start giving a value to a register.
+li $2, 1
+li $3, 2
+li $4, 3
+li $5, 4
+li $6, 5
+li $7, 6
+li $8, 7
+li $9, 8
+li $10, 9
+li $11, 10
+li $12, 11
+li $13, 12
+li $14, 13
+li $15, 14
+li $16, 15
+li $17, 16
+li $18, 17
+li $19, 18
+
+
+
+# Only regular ORI, no Puesdo
+
+# Or and store to itself
+# These should not have any effect
+ori $2, $2, 1
+ori $2, $2, 1
+ori $2, $2, 1
+ori $2, $2, 1
+
+ori $4, $4, 1
+ori $4, $4, 1
+ori $4, $4, 1
+
+ori $6, $6, 25
+ori $6, $6, 27
+
+ori $9, $9, 100
+ori $9, $9, 150
+
+ori $10, $10, 200
+
+
+# Large Ori to self
+
+ori $2, $2, 1000
+ori $2, $2, 1000
+ori $2, $2, 1000
+ori $2, $2, 1000
+
+ori $4, $4, 1000
+ori $4, $4, 1000
+ori $4, $4, 1000
+
+ori $6, $6, 2000
+ori $6, $6, 10000
+
+ori $9, $9, 15000
+ori $9, $9, 20000
+
+ori $10, $10, 32767
+
+# Small ORI from another to self
+
+ori $2, $3, 1
+ori $2, $3, 1
+ori $2, $3, 1
+ori $2, $3, 1
+
+ori $4, $5, 1
+ori $4, $5, 1
+ori $4, $5, 1
+
+ori $6, $7, 25
+ori $6, $8, 27
+
+ori $9, $10, 100
+ori $9, $11, 150
+
+ori $10, $19, 200
+
+# Large ORI form another to self
+
+ori $11, $12, 1000
+ori $11, $12, 1000
+ori $11, $12, 1000
+ori $11, $12, 1000
+
+ori $13, $14, 1000
+ori $13, $14, 1000
+ori $13, $14, 1000
+
+ori $15, $16, 2000
+ori $15, $17, 10000
+
+ori $19, $18, 15000
+ori $19, $9, 20000
+
+ori $14, $7, 32767
+
+# Start giving a value to a register.
+li $2, 1
+li $3, 2
+li $4, 3
+li $5, 4
+li $6, 5
+li $7, 6
+li $8, 7
+li $9, 8
+li $10, 9
+li $11, 10
+li $12, 11
+li $13, 12
+li $14, 13
+li $15, 14
+li $16, 15
+li $17, 16
+li $18, 17
+li $19, 18
+
+
+
+# Only regular ORI, no Puesdo
+
+# Or and store to itself
+# These should not have any effect
+ori $2, $2, 1
+ori $2, $2, 1
+ori $2, $2, 1
+ori $2, $2, 1
+
+ori $4, $4, 1
+ori $4, $4, 1
+ori $4, $4, 1
+
+ori $6, $6, 25
+ori $6, $6, 27
+
+ori $9, $9, 100
+ori $9, $9, 150
+
+ori $10, $10, 200
+
+
+# Large Ori to self
+
+ori $2, $2, 1000
+ori $2, $2, 1000
+ori $2, $2, 1000
+ori $2, $2, 1000
+
+ori $4, $4, 1000
+ori $4, $4, 1000
+ori $4, $4, 1000
+
+ori $6, $6, 2000
+ori $6, $6, 10000
+
+ori $9, $9, 15000
+ori $9, $9, 20000
+
+ori $10, $10, 32767
+
+# Small ORI from another to self
+
+ori $2, $3, 1
+ori $2, $3, 1
+ori $2, $3, 1
+ori $2, $3, 1
+
+ori $4, $5, 1
+ori $4, $5, 1
+ori $4, $5, 1
+
+ori $6, $7, 25
+ori $6, $8, 27
+
+ori $9, $10, 100
+ori $9, $11, 150
+
+ori $10, $19, 200
+
+# Large ORI form another to self
+
+ori $11, $12, 1000
+ori $11, $12, 1000
+ori $11, $12, 1000
+ori $11, $12, 1000
+
+ori $13, $14, 1000
+ori $13, $14, 1000
+ori $13, $14, 1000
+
+ori $15, $16, 2000
+ori $15, $17, 10000
+
+ori $19, $18, 15000
+ori $19, $9, 20000
+
+ori $14, $7, 32767
+
+# Start giving a value to a register.
+li $2, 1
+li $3, 2
+li $4, 3
+li $5, 4
+li $6, 5
+li $7, 6
+li $8, 7
+li $9, 8
+li $10, 9
+li $11, 10
+li $12, 11
+li $13, 12
+li $14, 13
+li $15, 14
+li $16, 15
+li $17, 16
+li $18, 17
+li $19, 18
+
+
+
+# Only regular ORI, no Puesdo
+
+# Or and store to itself
+# These should not have any effect
+ori $2, $2, 1
+ori $2, $2, 1
+ori $2, $2, 1
+ori $2, $2, 1
+
+ori $4, $4, 1
+ori $4, $4, 1
+ori $4, $4, 1
+
+ori $6, $6, 25
+ori $6, $6, 27
+
+ori $9, $9, 100
+ori $9, $9, 150
+
+ori $10, $10, 200
+
+
+# Large Ori to self
+
+ori $2, $2, 1000
+ori $2, $2, 1000
+ori $2, $2, 1000
+ori $2, $2, 1000
+
+ori $4, $4, 1000
+ori $4, $4, 1000
+ori $4, $4, 1000
+
+ori $6, $6, 2000
+ori $6, $6, 10000
+
+ori $9, $9, 15000
+ori $9, $9, 20000
+
+ori $10, $10, 32767
+
+# Small ORI from another to self
+
+ori $2, $3, 1
+ori $2, $3, 1
+ori $2, $3, 1
+ori $2, $3, 1
+
+ori $4, $5, 1
+ori $4, $5, 1
+ori $4, $5, 1
+
+ori $6, $7, 25
+ori $6, $8, 27
+
+ori $9, $10, 100
+ori $9, $11, 150
+
+ori $10, $19, 200
+
+# Large ORI form another to self
+
+ori $11, $12, 1000
+ori $11, $12, 1000
+ori $11, $12, 1000
+ori $11, $12, 1000
+
+ori $13, $14, 1000
+ori $13, $14, 1000
+ori $13, $14, 1000
+
+ori $15, $16, 2000
+ori $15, $17, 10000
+
+ori $19, $18, 15000
+ori $19, $9, 20000
+
+ori $14, $7, 32767

@@ -1,0 +1,29 @@
+j label
+
+label:
+addi $4, $4, 5
+jal label2
+j label1
+
+label1:
+add $3, $3, 4
+j label3
+
+
+label2:
+add $23, $0, $ra
+jr $ra
+
+
+label3:
+addi $2, $2, 2
+j label4
+
+
+label4:
+addi $6, $6, 6
+j label5
+
+
+label5:
+addi $7, $7, 7

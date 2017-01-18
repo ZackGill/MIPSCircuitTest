@@ -1,0 +1,27 @@
+addi $4, $4, 5
+j test2
+
+test1:
+addi $4, $4, 5
+j test4
+
+
+
+test2:
+addi $4, $4, 5
+j test1
+
+
+
+test3:
+addi $4, $4, 5
+j exit
+
+
+
+test4:
+addi $4, $4, 5
+j test3
+
+
+exit:

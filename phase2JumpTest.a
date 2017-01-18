@@ -1,0 +1,79 @@
+startPhase2:
+add $23, $0, $ra
+
+
+adduTest:
+add $23, $0, $ra
+addu $1, $2, $3
+addu $1, $1, $3
+addu $1, $1, $1
+
+addiu $5, $6, -100
+addiu $5, $5, 100000
+
+
+andTest:
+add $23, $0, $ra
+and $3, $4, $5
+and $3, $3, $6
+and $3, $3, $3
+
+andi $7, $6, 46756
+andi $8, $8, -6599
+
+jal sltTest
+
+add $23, $0, $ra
+
+
+norTest:
+add $23, $0, $ra
+nor $6, $7, $8
+nor $6, $6, $9
+jal sltuTest
+
+sltTest:
+add $20, $20, 1
+beq $20, 2, quit
+add $23, $0, $ra
+li $9, -100
+li $10, 100
+slt $3, $9, $10
+slt $4, $10, $9
+jal norTest
+
+sltuTest:
+add $23, $0, $ra
+li $9, -100
+li $10, 100
+sltu $3, $9, $10
+sltu $4, $10, $9
+
+
+subTest:
+add $23, $0, $ra
+sub $10, $10, $9
+sub $10, $8, $11
+sub $10, $10, $10
+
+subu $9, $8, $7
+subu $9, $8, $9
+subu $9, $9, $1
+subu $9, $9, $9
+
+
+xorTest:
+add $23, $0, $ra
+xor $3, $2, $1
+xor $4, $4, $3
+
+xori $9, $8, 10101
+xori $9, $7, -56455
+xori $9, $9, 39489
+xori $9, $10 1000000
+
+jr $23
+
+quit:
+
+

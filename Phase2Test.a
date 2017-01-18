@@ -1,0 +1,175 @@
+# Register 23 is reserved for a copy of $ra
+
+jTest:
+
+j addiTest
+
+
+addiTest:
+
+# Regular Immediates
+
+addi $2, $2, 1
+addi $2, $2, 0
+addi $3, $4, 32767
+addi $7, $5, 100
+addi $3, $3, -32677
+addi $2, $2, -1
+addi $7, $7, -100
+addi $3, $3, -32678
+
+
+# Peusdo Immediates
+
+addi $2, $2, 65353
+addi $2, $2, -65353
+addi $7, $7, 40000000
+addi $9, $9, 2147483647
+#addi $10, $10, 2478483648
+
+
+j addTest
+
+addTest:
+
+add $2, $2, $2
+add $4, $5, $7
+add $8, $8, $10
+add $3, $25, $24
+add $3, $15, $14
+add $13, $12, $11
+add $10, $9, $5
+add $7, $6, $5
+add $4, $3, $2
+
+j luiTest
+
+luiTest:
+
+
+lui $2, 1
+lui $2, 0
+lui $3, 32767
+lui $7, 100
+lui $3, 32768
+lui $2, 65355
+lui $7, 5000
+lui $3, 500
+j beqTest
+
+oriTest:
+
+
+ori $2, $2, 1
+ori $2, $2, 0
+ori $3, $4, 32767
+ori $7, $5, 100
+ori $3, $3, -32677
+ori $2, $2, -1
+ori $7, $7, -100
+ori $3, $3, -32678
+ori $3, $2, -65535
+j addTest
+
+beqTest:
+
+# Test Bad Branch
+addi $2, $9, 0
+add $4, $9, $6
+beq $4, $2, haltTest
+
+# Set 2 registers to each other. Good Branch
+addi $8, $9, 0
+addi $9, $9, 0
+beq $8, $9, startPhase2
+
+lwTest:
+lw $9, 8($sp)
+lw $9, 16($sp)
+lw $2, 0($sp)
+
+j addTest
+
+swTest:
+sw $11, 8($sp)
+sw $11, 16($sp)
+sw $11, 0($sp)
+j addTest
+
+haltTest:
+li $v0, 10
+syscall
+
+
+startPhase2:
+add $23, $0, $ra
+jal andTest
+j adduTest
+
+
+adduTest:
+addu $1, $2, $3
+addu $1, $1, $3
+addu $1, $1, $1
+
+addiu $5, $6, -100
+addiu $5, $5, 100000
+
+bne $0, $0, adduTest  # Should not take branch
+bne $ra, $0, norTest
+
+andTest:
+
+and $3, $4, $5
+and $3, $3, $6
+and $3, $3, $3
+
+andi $7, $6, 46756
+andi $8, $8, -6599
+
+add $23, $0, $ra
+j adduTest
+
+
+norTest:
+nor $6, $7, $8
+nor $6, $6, $9
+j sltuTest
+
+sltTest:
+li $9, -100
+li $10, 100
+slt $3, $9, $10
+slt $4, $10, $9
+j subTest
+
+sltuTest:
+li $9, -100
+li $10, 100
+sltu $3, $9, $10
+sltu $4, $10, $9
+j sltTest
+
+
+subTest:
+sub $10, $10, $9
+sub $10, $8, $11
+sub $10, $10, $10
+
+subu $9, $8, $7
+subu $9, $8, $9
+subu $9, $9, $1
+subu $9, $9, $9
+
+j xorTest
+
+xorTest:
+xor $3, $2, $1
+xor $4, $4, $3
+
+xori $9, $8, 10101
+xori $9, $7, -56455
+xori $9, $9, 39489
+xori $9, $10 1000000
+
+j haltTest

@@ -1,0 +1,285 @@
+# Addi testing. Just regular, not peusdo inst.
+
+li $2, 0
+li $3, 3
+li $4, 4
+li $5, 5
+li $6, 6
+li $7, 7
+li $8, 8
+
+
+# adding small positives to self (incr)
+
+addi $2, $2, 1
+addi $2, $2, 1
+addi $2, $2, 1
+
+addi $3, $3, 5
+addi $3, $3, 10
+addi $3, $3, 15
+addi $3, $3, 20
+
+addi $4, $4, 100
+addi $4, $4, 200
+addi $4, $4, 300
+addi $4, $4, 400
+addi $4, $4, 500
+
+# adding Small positives to other reg, store in new reg.
+
+addi $2, $3, 1
+addi $2, $3, 1
+addi $2, $3, 1
+
+addi $3, $4, 5
+addi $3, $4, 10
+addi $3, $4, 15
+addi $3, $4, 20
+
+addi $4, $5, 100
+addi $4, $5, 200
+addi $4, $5, 300
+addi $4, $5, 400
+addi $4, $5, 500
+
+
+
+# adding large positives to self
+
+addi $6, $6, 1000
+addi $6, $6, 5000
+addi $6, $6, 10000
+addi $6, $6, 15000
+
+addi $7, $7, 32767
+addi $7, $7, 32767
+addi $7, $7, 32767
+addi $7, $7, 32767
+
+# adding large positives to other reg, store in new reg
+
+addi $6, $8, 1000
+addi $6, $8, 5000
+addi $6, $8, 10000
+addi $6, $8, 15000
+
+addi $7, $8, 32767
+addi $7, $6, 32767
+addi $7, $5, 32767
+addi $7, $8, 32767
+
+# Repeat to make sure multiple runs doesn't break system.
+
+# Addi testing. Just regular, not peusdo inst.
+
+li $2, 0
+li $3, 3
+li $4, 4
+li $5, 5
+li $6, 6
+li $7, 7
+li $8, 8
+
+
+# adding small positives to self (incr)
+
+addi $2, $2, 1
+addi $2, $2, 1
+addi $2, $2, 1
+
+addi $3, $3, 5
+addi $3, $3, 10
+addi $3, $3, 15
+addi $3, $3, 20
+
+addi $4, $4, 100
+addi $4, $4, 200
+addi $4, $4, 300
+addi $4, $4, 400
+addi $4, $4, 500
+
+# adding Small positives to other reg, store in new reg.
+
+addi $2, $3, 1
+addi $2, $3, 1
+addi $2, $3, 1
+
+addi $3, $4, 5
+addi $3, $4, 10
+addi $3, $4, 15
+addi $3, $4, 20
+
+addi $4, $5, 100
+addi $4, $5, 200
+addi $4, $5, 300
+addi $4, $5, 400
+addi $4, $5, 500
+
+
+
+# adding large positives to self
+
+addi $6, $6, 1000
+addi $6, $6, 5000
+addi $6, $6, 10000
+addi $6, $6, 15000
+
+addi $7, $7, 32767
+addi $7, $7, 32767
+addi $7, $7, 32767
+addi $7, $7, 32767
+
+# adding large positives to other reg, store in new reg
+
+addi $6, $8, 1000
+addi $6, $8, 5000
+addi $6, $8, 10000
+addi $6, $8, 15000
+
+addi $7, $8, 32767
+addi $7, $6, 32767
+addi $7, $5, 32767
+addi $7, $8, 32767
+
+# Addi testing. Just regular, not peusdo inst.
+
+li $2, 0
+li $3, 3
+li $4, 4
+li $5, 5
+li $6, 6
+li $7, 7
+li $8, 8
+
+
+# adding small positives to self (incr)
+
+addi $2, $2, 1
+addi $2, $2, 1
+addi $2, $2, 1
+
+addi $3, $3, 5
+addi $3, $3, 10
+addi $3, $3, 15
+addi $3, $3, 20
+
+addi $4, $4, 100
+addi $4, $4, 200
+addi $4, $4, 300
+addi $4, $4, 400
+addi $4, $4, 500
+
+# adding Small positives to other reg, store in new reg.
+
+addi $2, $3, 1
+addi $2, $3, 1
+addi $2, $3, 1
+
+addi $3, $4, 5
+addi $3, $4, 10
+addi $3, $4, 15
+addi $3, $4, 20
+
+addi $4, $5, 100
+addi $4, $5, 200
+addi $4, $5, 300
+addi $4, $5, 400
+addi $4, $5, 500
+
+
+
+# adding large positives to self
+
+addi $6, $6, 1000
+addi $6, $6, 5000
+addi $6, $6, 10000
+addi $6, $6, 15000
+
+addi $7, $7, 32767
+addi $7, $7, 32767
+addi $7, $7, 32767
+addi $7, $7, 32767
+
+# adding large positives to other reg, store in new reg
+
+addi $6, $8, 1000
+addi $6, $8, 5000
+addi $6, $8, 10000
+addi $6, $8, 15000
+
+addi $7, $8, 32767
+addi $7, $6, 32767
+addi $7, $5, 32767
+addi $7, $8, 32767
+
+# Addi testing. Just regular, not peusdo inst.
+
+li $2, 0
+li $3, 3
+li $4, 4
+li $5, 5
+li $6, 6
+li $7, 7
+li $8, 8
+
+
+# adding small positives to self (incr)
+
+addi $2, $2, 1
+addi $2, $2, 1
+addi $2, $2, 1
+
+addi $3, $3, 5
+addi $3, $3, 10
+addi $3, $3, 15
+addi $3, $3, 20
+
+addi $4, $4, 100
+addi $4, $4, 200
+addi $4, $4, 300
+addi $4, $4, 400
+addi $4, $4, 500
+
+# adding Small positives to other reg, store in new reg.
+
+addi $2, $3, 1
+addi $2, $3, 1
+addi $2, $3, 1
+
+addi $3, $4, 5
+addi $3, $4, 10
+addi $3, $4, 15
+addi $3, $4, 20
+
+addi $4, $5, 100
+addi $4, $5, 200
+addi $4, $5, 300
+addi $4, $5, 400
+addi $4, $5, 500
+
+
+
+# adding large positives to self
+
+addi $6, $6, 1000
+addi $6, $6, 5000
+addi $6, $6, 10000
+addi $6, $6, 15000
+
+addi $7, $7, 32767
+addi $7, $7, 32767
+addi $7, $7, 32767
+addi $7, $7, 32767
+
+# adding large positives to other reg, store in new reg
+
+addi $6, $8, 1000
+addi $6, $8, 5000
+addi $6, $8, 10000
+addi $6, $8, 15000
+
+addi $7, $8, 32767
+addi $7, $6, 32767
+addi $7, $5, 32767
+addi $7, $8, 32767
